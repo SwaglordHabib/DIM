@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH.DIM.API", "SH.DIM.API\SH.DIM.API.csproj", "{0E04B859-CA69-4CF8-B8AE-2A66F111FC72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH.DIM.Services", "SH.DIM.Services\SH.DIM.Services.csproj", "{F0A469EC-2502-4E3B-901D-B8EF740B1C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH.DIM.DataAccess", "SH.DIM.DataAccess\SH.DIM.DataAccess.csproj", "{414DBBED-31B9-4BE6-85AD-5B49B50C27DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH.DIM.Utils", "SH.DIM.Utils\SH.DIM.Utils.csproj", "{8DBCF38D-919F-47A9-BC76-C6EA905EBC38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH.DIM.Models", "SH.DIM.Models\SH.DIM.Models.csproj", "{E7E827FE-EF52-4DD8-A47D-D83D7404088D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH.DIM.Models.Contracts", "SH.DIM.Models.Contracts\SH.DIM.Models.Contracts.csproj", "{78A18CCE-233B-4C8E-B33F-3806C74C546B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E04B859-CA69-4CF8-B8AE-2A66F111FC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E04B859-CA69-4CF8-B8AE-2A66F111FC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E04B859-CA69-4CF8-B8AE-2A66F111FC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E04B859-CA69-4CF8-B8AE-2A66F111FC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A469EC-2502-4E3B-901D-B8EF740B1C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A469EC-2502-4E3B-901D-B8EF740B1C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A469EC-2502-4E3B-901D-B8EF740B1C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A469EC-2502-4E3B-901D-B8EF740B1C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414DBBED-31B9-4BE6-85AD-5B49B50C27DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414DBBED-31B9-4BE6-85AD-5B49B50C27DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414DBBED-31B9-4BE6-85AD-5B49B50C27DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414DBBED-31B9-4BE6-85AD-5B49B50C27DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBCF38D-919F-47A9-BC76-C6EA905EBC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBCF38D-919F-47A9-BC76-C6EA905EBC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBCF38D-919F-47A9-BC76-C6EA905EBC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBCF38D-919F-47A9-BC76-C6EA905EBC38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E827FE-EF52-4DD8-A47D-D83D7404088D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E827FE-EF52-4DD8-A47D-D83D7404088D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E827FE-EF52-4DD8-A47D-D83D7404088D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E827FE-EF52-4DD8-A47D-D83D7404088D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A18CCE-233B-4C8E-B33F-3806C74C546B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A18CCE-233B-4C8E-B33F-3806C74C546B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A18CCE-233B-4C8E-B33F-3806C74C546B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A18CCE-233B-4C8E-B33F-3806C74C546B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA881FB2-BC38-4A97-A2B3-E50B91929F23}
+	EndGlobalSection
+EndGlobal
