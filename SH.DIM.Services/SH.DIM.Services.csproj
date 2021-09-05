@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SH.DIM.DataAccess\SH.DIM.DataAccess.csproj" />
+    <ProjectReference Include="..\SH.DIM.Models.Contracts\SH.DIM.Models.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

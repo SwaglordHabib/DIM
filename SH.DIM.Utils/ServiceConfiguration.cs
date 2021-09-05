@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using SH.DIM.Models;
 using SH.DIM.Models.Contracts;
+using SH.DIM.Services;
 
 namespace SH.DIM.Utils
 {
@@ -16,6 +17,9 @@ namespace SH.DIM.Utils
 
              // Databasesettings
             services.AddSingleton<IDatabaseSettings>(sp => sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
+
+            // Services
+            services.AddSingleton<ICommodityService, CommodityService>();
 
 
             return services;

@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SH.DIM.Models\SH.DIM.Models.csproj" />
+    <ProjectReference Include="..\SH.DIM.Services\SH.DIM.Services.csproj" />
   </ItemGroup>
 
 </Project>

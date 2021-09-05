@@ -19,31 +19,58 @@ public class CommodityController : ControllerBase
     [HttpGet]
     public IEnumerable<Commodity> Get()
     {
-        return commodityService.GetCommodities();
+        return commodityService.GetAll();
     }
 
-    // GET api/<CommodityController>/5
-    [HttpGet("{id}")]
-    public Commodity Get(string id)
+    // GET api/<CommodityController>
+    [HttpGet("{id:length(24)}", Name = "GetCommodity")]
+    public ActionResult<Commodity> Get(string id)
     {
-        return commodityService.GetCommodities().ToList().Find(c => c.Id == id);
+        Commodity commodity = commodityService.Get(id);
+        if (commodity == null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            return commodity;
+        }
     }
 
     // POST api/<CommodityController>
     [HttpPost]
-    public void Post([FromBody] string value)
+    public ActionResult<Commodity> Post(Commodity commodity)
     {
+        commodityService.Create(commodity);
+
+        return CreatedAtRoute("GetCommodity", new { id = commodity.Id.ToString() }, commodity);
     }
 
     // PUT api/<CommodityController>/5
-    [HttpPut("{id}")]
-    public void Put(int id, [FromBody] string value)
+    [HttpPut("{id:length(24)}")]
+    public IActionResult Put(string id, Commodity commodityIn)
     {
+        var commodity = commodityService.Get(id);
+        if (commodity == null)
+        {
+            return NotFound();
+        }
+
+        commodityService.Update(id, commodityIn);
+        return NoContent();
     }
 
     // DELETE api/<CommodityController>/5
-    [HttpDelete("{id}")]
-    public void Delete(int id)
+    [HttpDelete("{id:length(24)}")]
+    public IActionResult Delete(string id)
     {
+        var commodity = commodityService.Get(id);
+        if (commodity == null)
+        {
+            return NotFound();
+        }
+
+        commodityService.Remove(commodity);
+        return NoContent();
     }
 }
